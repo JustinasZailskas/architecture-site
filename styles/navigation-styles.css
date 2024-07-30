@@ -25,6 +25,14 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 992px;
+    margin: auto;
+  }
   .navbar-collapse {
     display: none;
     text-align: center;
@@ -49,6 +57,14 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.navbar-collapse .collapse .navbar-nav .nav-item:active {
+  display: block;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(161, 140, 154, 1);
+  margin: 0;
+}
+
 .navbar-collapse .collapse .navbar-nav .nav-item:hover {
   display: block;
   text-decoration: none;
